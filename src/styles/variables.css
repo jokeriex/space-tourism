@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+
+@theme {    
+        --color-blue-900: #0B0D17;
+        --color-blue-300: #D0D6F9;
+        --color-white: #FFFFFF;
+
+        --size-25: 2px;
+        --size-50: 4px;
+        --size-100: 8px;
+        --size-150: 12px;
+        --size-200: 16px;
+        --size-300: 24px;
+        --size-400: 32px;
+        --size-500: 40px;
+        --size-600: 48px;
+        --size-800: 64px;
+        --size-1000: 80px;
+        --size-1200: 96px;
+        --size-1600: 128px;
+
+        --button-w: 272px;
+        --button-h: 272px;
+
+        --font-primary: 'Bellefair', serif;
+        --font-secondary: 'Barlow Condensed', sans-serif;
+        --font-tertiary: 'Barlow', sans-serif;
+
+        --home-lg-background: url('../assets/home/background-home-desktop.jpg');
+        --home-min-background: url('../assets/home/background-home-mobile.jpg');
+
+        --destination-lg-background: url('../assets/destination/background-destination-desktop.jpg');
+        --destination-min-background: url('../assets/destination/background-destination-mobile.jpg');
+
+        --crew-lg-backgound: url('../assets/crew/background-crew-desktop.jpg');
+        --crew-min-backgound: url('../assets/crew/background-crew-mobile.jpg');
+        
+        --technology-lg-backgound: url('../assets/technology/background-technology-desktop.jpg');
+        --technology-min-backgound: url('../assets/technology/background-technology-mobile.jpg');
+}
