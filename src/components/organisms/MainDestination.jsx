@@ -44,6 +44,18 @@ export default function MainDestination() {
         setSelectedDestination(destination);
     }
 
+    const destinationTabs = destinations.map(dest => (
+        <DestinationTab 
+            key={dest.name}
+            isActive={selectedDestination.name === dest.name}
+            onClick={() => {handleClick(dest.name)}}
+            classNameDiv="h-(--size-400) flex flex-col justify-center items-start"
+            classNameButton="flex justify-start items-start preset-font-eight"
+        >
+            {dest.name}
+        </DestinationTab>
+    ));
+
     return (
         <main className="w-full h-full flex flex-col justify-start items-center py-(--size-600)">
             <section className="w-full h-full max-w-[1110px] flex flex-col justify-start items-start gap-(--size-300)">
@@ -56,19 +68,8 @@ export default function MainDestination() {
                     </article>
                     <article className="w-full h-full  flex flex-col justify-center items-center">
                         <article className="w-full h-full max-w-[445px] flex flex-col justify-center items-center gap-(--size-500)">
-                            <nav className="w-full flex justify-start items-start gap-(--size-400)">
-                                <DestinationTab onClick={() => {handleClick("MOON")}} classNameDiv="h-(--size-400) flex flex-col justify-center items-start" classNameButton="flex justify-start items-start preset-font-eight text-white">
-                                    MOON
-                                </DestinationTab>
-                                <DestinationTab onClick={() => {handleClick("MARS")}} classNameDiv="h-(--size-400) flex flex-col justify-center items-start" classNameButton="flex justify-start items-start preset-font-eight text-white">
-                                    MARS
-                                </DestinationTab>
-                                <DestinationTab onClick={() => {handleClick("EUROPA")}} classNameDiv="h-(--size-400) flex flex-col justify-center items-start" classNameButton="flex justify-start items-start preset-font-eight text-white">
-                                    EUROPA
-                                </DestinationTab>
-                                <DestinationTab onClick={() => {handleClick("TITAN")}} classNameDiv="h-(--size-400) flex flex-col justify-center items-start" classNameButton="flex justify-start items-start preset-font-eight text-white">
-                                    TITAN
-                                </DestinationTab>
+                            <nav className="w-full flex justify-start items-start gap-(--size-400) text-(--color-blue-300)">
+                                {destinationTabs}
                             </nav>
                             <article className="w-full flex flex-col justify-center items-start gap-(--size-200)">
                                 <Title className="preset-font-two text-color-white">{selectedDestination.name}</Title>
