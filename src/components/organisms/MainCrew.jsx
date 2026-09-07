@@ -53,32 +53,38 @@ export default function MainCrew() {
             isActive={selectedMember.name === member.name}
             onClick={() => { handleClick(member.name) }}
             classNameDiv=""
-            classNameButton="bg-white w-4 h-4 rounded-full"
+            classNameButton="w-[15px] h-[15px] rounded-full"
         >
         </CrewTab>
     ));
-    
+
     return (
-        <main>
-            <section>
-                <Title><span>02</span>MEET YOUR CREW</Title>
-                <article>
-                    <article>
-                        <article>
-                            <article>
-                                <Title>{selectedMember.role}</Title>
-                                <Text>{selectedMember.name}</Text>
+        <main className="w-full h-full flex flex-col items-center justify-start py-(--size-600)">
+            <section className="w-full max-w-[1110px] h-full flex flex-col items-start justify-start gap-(--size-300)">
+                <Title className="flex justify-start items-start gap-(--size-300) text-white preset-font-five">
+                    <span className="preset-font-five text-white/25">02</span>
+                    MEET YOUR CREW
+                </Title>
+                <article className="w-full h-full flex justify-start items-center gap-(--size-400)">
+                    <article className="w-full h-full flex flex-col justify-start items-start gap-(--size-500)">
+                        <article className="w-full max-w-[640px] h-full flex flex-col gap-(--size-300) justify-center items-start">
+                            <article className="w-full flex flex-col justify-start items-start gap-(--size-200)">
+                                <Title className="preset-font-four text-white/50">{selectedMember.role}</Title>
+                                <Text className="preset-font-three text-white">{selectedMember.name}</Text>
                             </article>
-                            <Text>{selectedMember.description}</Text>
+                            <Text className="text-white preset-font-nine">
+                                {selectedMember.description}
+                            </Text>
                         </article>
-                        <article>
-                            <nav>
+                        <article className="w-full flex justify-start items-start gap-(--size-100) pb-(--size-600)">
+                            <nav className="w-[540px] flex justify-start items-start gap-(--size-100)">
                                 {crewTabs}
                             </nav>
                         </article>
                     </article>
-                    <article>
-                        <img src={selectedMember.image} alt={selectedMember.name}></img>
+                    <article className="w-full h-full flex justify-center
+                    items-center">
+                        <img className="w-[539px] h-[676px]" src={selectedMember.image} alt={selectedMember.name}></img>
                     </article>
                 </article>
             </section>

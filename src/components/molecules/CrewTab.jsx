@@ -2,8 +2,9 @@ export default function CrewTab({isActive, children, onClick, classNameDiv, clas
     
     return (
         <div className={classNameDiv}>
-            <button onClick={onClick} className={`${classNameButton} pb-2 border-b-[3px] ${
-                    isActive ? 'border-white text-white' : 'border-transparent'
+            <button onClick={onClick} 
+            className={`${classNameButton} ${
+                    isActive ? 'bg-white': 'bg-white/20'
                 }`}>
                 {children}
             </button>
