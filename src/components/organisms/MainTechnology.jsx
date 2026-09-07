@@ -9,7 +9,7 @@ import SpaceCapsule from "../../assets/technology/image-space-capsule-portrait.j
 export default function MainTechnology(){
     const technologies = [
         {
-            title: "TLAUNCH VEHICLE",
+            title: "LAUNCH VEHICLE",
             number: "1",
             description: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
             image: LaunchVehicle,
@@ -55,12 +55,12 @@ export default function MainTechnology(){
                     SPACE TOURISM
                 </Title>
                 <article className="w-full h-full flex justify-start items-center gap-(--size-400)">
-                    <article className="w-full w-min-[635px] flex flex-col justify-center items-start gap-(--size-800)">
+                    <article className="w-full min-w-[635px] flex justify-start items-center gap-(--size-800)">
                         <nav className="flex flex-col gap-(--size-400)">
                             {technologyTabs}
                         </nav>
                         <article className="w-full max-w-[640px] flex flex-col justify-start items-center gap-(--size-300)">
-                            <article className="w-full felx flex-col justify-start items-start gap-(--size-200)">
+                            <article className="w-full flex flex-col justify-start items-start gap-(--size-200)">
                                 <Title className="preset-font-four text-white/50">THE TECHNOLOGY</Title>
                                 <Title className="preset-font-three text-white">{selectedTechnology.title}</Title>
                             </article>

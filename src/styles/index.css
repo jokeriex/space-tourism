@@ -25,37 +25,37 @@
 }
 
 @utility preset-font-three {
-    font: 400 56px/64.2% var(--font-secondary);
+    font: 400 56px/164.2% var(--font-secondary);
     letter-spacing: 0px;
 }
 
 @utility preset-font-four {
-    font: 400 32px/36.7% var(--font-secondary);
+    font: 400 32px/136.7% var(--font-secondary);
     letter-spacing: 0px;
 }
 
 @utility preset-font-five {
-    font: 400 28px/33.6% var(--font-secondary);
+    font: 400 28px/133.6% var(--font-secondary);
     letter-spacing: 4px;
 }
 
 @utility preset-font-six {
-    font: 400 14px/32.1% var(--font-primary);
+    font: 400 14px/132.1% var(--font-primary);
     letter-spacing: 0px;
 }
 
 @utility preset-font-seven {
-    font: 400 14px/16.8% var(--font-primary);
+    font: 400 14px/116.8% var(--font-primary);
     letter-spacing: 2px;
 }
 
 @utility preset-font-eight {
-    font: 400 16px/19.2% var(--font-primary);
+    font: 400 16px/119.2% var(--font-primary);
     letter-spacing: 2px;
 }
 
 @utility preset-font-eight-bold {
-    font: bold 16px/19.2% var(--font-primary);
+    font: bold 16px/119.2% var(--font-primary);
     letter-spacing: 2px;
 }
 
